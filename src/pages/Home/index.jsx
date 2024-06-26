@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import { Container, MovieList, Movie } from './style';
 import { useState } from 'react';
 import { apiKey } from '../../config/key';
+import { Link } from 'react-router-dom';
+
 
 function Home() {
 
@@ -13,7 +15,7 @@ function Home() {
             method: 'GET',
             headers: {
                 accept: 'application/json',
-                Authorization: `Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4ZjAzNmE2MDE1MWQ2NDM2NWRiZWE2NWNhNDQ4MWUwZCIsIm5iZiI6MTcxOTI1MTg1Ny41MTQ0MjIsInN1YiI6IjY2Nzk4OWViZmFlMDk3NTE3MTNiNDBjMiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.BJeHaDKF1i8nkR6611dlroIf1he_u730ZlZyr2aGaYg` 
+                Authorization: `Bearer ${apiKey}` 
             }
         };
 
@@ -38,9 +40,9 @@ function Home() {
                 {movies.map(movie => { // 'movie' é uma iteração única do Array de objetos 'movies'
                     return(
                         <Movie key={movie.id}>
-                            <a href="#">
+                            <Link to={`/details/${movie.id}`}>
                                 <img src={`${image_path}${movie.poster_path}`} alt={movie.title} />
-                            </a>                    
+                            </Link>                 
                             <span>{movie.title}</span>
                         </Movie>
                     )
