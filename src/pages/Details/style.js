@@ -2,8 +2,14 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     h1{
-        margin: 3rem 0;
+        margin: 3rem 0 0.8rem 0;
         font-size: 300%;
+    }
+
+    h2{
+        margin-bottom: 2.5rem;
+        font-size: 150%;
+        opacity: 85%;
     }
 
     padding: 4rem 0;
@@ -18,6 +24,10 @@ export const Container = styled.div`
     img{
         width: 300px;
         border-radius: 1rem;
+    }
+
+    .second-image{
+        margin-top: 1rem;
     }
 
     .details{
@@ -50,7 +60,9 @@ export const Container = styled.div`
         font-size: 110%;
     }
 
-    .release-date{
-        opacity: 60%;
+    .subdetails{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.5rem;
     }
 `
