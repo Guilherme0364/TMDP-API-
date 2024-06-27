@@ -14,8 +14,8 @@ function Home() {
         const options = {
             method: 'GET',
             headers: {
-                accept: 'application/json',
-                Authorization: `Bearer ${apiKey}` 
+                accept: 'application/json', // OBS: As vezes a chave não funciona como variável 
+                Authorization: `Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4ZjAzNmE2MDE1MWQ2NDM2NWRiZWE2NWNhNDQ4MWUwZCIsIm5iZiI6MTcxOTI1MTg1Ny41MTQ0MjIsInN1YiI6IjY2Nzk4OWViZmFlMDk3NTE3MTNiNDBjMiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.BJeHaDKF1i8nkR6611dlroIf1he_u730ZlZyr2aGaYg` 
             }
         };
 
