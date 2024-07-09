@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Container, MovieList, Movie } from './style';
 import { useState } from 'react';
-import { apiKey } from '../../config/key';
+// import { apiKey } from '../../config/key'; Issue: Resolver importação da apiKey
 import { Link } from 'react-router-dom';
 
 
