@@ -70,7 +70,7 @@ function Detail() {
                     <span>Custo de produção: {movie.budget && formatCurrency(movie.budget)}</span> 
                     <span>Lucro gerado: {movie.revenue && formatCurrency(movie.revenue)}</span> 
                 </div>
-                    <Link to="/"><button>Voltar</button></Link>
+                    <Link to="/popular"><button>Voltar</button></Link>
                 </div>
             </div>
         </Container>
